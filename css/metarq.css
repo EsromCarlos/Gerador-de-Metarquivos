@@ -1,0 +1,61 @@
+.container {
+    padding: 40px;
+    max-width: 500px;
+}
+
+.bts {
+    margin-left: 20%;
+}
+
+.bt-baixar {
+    color: #fff;
+    background-color: #28a746c0;
+    
+}
+
+.baixar {
+    width: 100%;
+}
+
+.bt-baixar:hover {
+    color: #fff;
+    background-color: #28a746ef;
+}
+
+.resultado {
+    max-width: 20%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
+.youtube {
+    text-indent: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+    border-style: none;
+    float: none;
+    line-height: normal;
+    font-size: 1px;
+    vertical-align: baseline;
+    display: inline-block;
+    width: 143px;
+    height: 48px;
+    margin-left: 30%;
+}
+
+.rodape {
+    background: rgba(216, 212, 212, 0.712);
+    max-height: 110px;
+}
+
+.rodape a {
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.rodape a:hover {
+    color: rgba(0, 0, 0, 0.849);
+    text-decoration: none;
+}

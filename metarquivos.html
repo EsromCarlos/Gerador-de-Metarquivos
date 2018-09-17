@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script> document.title = "Gerador de Metarquivos"</script>
+        <script type="text/javascript" src="https://sites.google.com/site/geradorzeta/metarq/jquery.min.js"></script>
+        <script type="text/javascript" src="https://sites.google.com/site/geradorzeta/metarq/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
+        <script type="text/javascript" src="https://sites.google.com/site/geradorzeta/metarq/FileSaver.js"></script>
+        <script type="text/javascript" src="https://sites.google.com/site/geradorzeta/metarq/metarq.js"></script>
+        <script type="text/javascript" src="https://sites.google.com/site/geradorzeta/metarq/jszip.min.js"></script>
+        <link rel="stylesheet" href="https://sites.google.com/site/geradorzeta/metarq/bootstrap.min.css">
+        <link rel="stylesheet" href="https://sites.google.com/site/geradorzeta/metarq/metarq.css">
+    </head>
+<body>
+    <div class="container shadow">
+        <div class="youtube">
+            <script src="https://apis.google.com/js/platform.js"></script>
+            <div class="g-ytsubscribe" data-channelid="UCbUxNlA_ExRSfsfTZuyrFAQ" data-layout="full" data-count="hidden"></div>
+        </div>
+        <br>
+        <form id="gerador">
+            <div class="form-group">
+                    <label for="api">Api Key:</label>
+                    <input type="text" class="form-control" id="api" placeholder="Chave API do Google Drive">
+                </div>
+            <div class="form-group">
+                <label for="pasta">Link da pasta:</label>
+                <input type="text" class="form-control" id="pasta" placeholder="Link da pasta do Google Drive">
+            </div>
+            <div class="row bts">
+                <button type="button" class="btn btn-outline-primary" onclick="gerar('.strm')">Gerar STRM</button>
+                <button type="button" class="ml-2 btn btn-outline-primary" onclick="gerar('.wax')">Gerar WAX</button>
+            </div>
+        </form>
+    </div>
+    <div class="shadow resultado"></div>
+    <footer class="rodape fixed-bottom text-center">
+        <div class="container">
+            <h6>Desenvolvido por Zeta Tec</h6>
+            <div class="row justify-content-center">
+                <a href="" onclick="event.preventDefault(); help()"><p>Ajuda</p></a> </div>
+            </div>
+    </footer>
+    <div class="modal fade bd-modal-lg" id="alertamodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="mb-3 close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    <div class="instrucoes">
+                        <iframe id="ytplayer" type="text/html" width="100%" height="400px"
+                            src="https://www.youtube.com/embed/DlXyZ3crO7U?autoplay=0&origin=https://zetatec27.blogspot.com"
+                            frameborder="0"></iframe>
+                            <h5>Atualização:</h5> <h6> Não é necessário fazer login, basta fornecer sua chave de API.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
